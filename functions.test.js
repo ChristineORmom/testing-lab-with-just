@@ -1,0 +1,24 @@
+let myFunctions = require("./functions")
+
+test("Return Two test", () => {
+    expect(myFunctions.returnTwo()).toBe(2)
+})
+
+test("Addition Test", () => {
+    expect(myFunctions.add(13, 2)).toBe(15)
+})
+
+describe("Math Challenge!", () => {
+    test("Add", () => {
+        expect(myFunctions.add(14, 6)).toBe(20)
+    })
+    test("Subtract", () => {
+        expect(myFunctions.subtract(11, 3)).toBe(8)
+    })
+    test("Multiply", () => {
+        expect(myFunctions.multiply(12, 3)).toBe(36)
+    })
+    test("Divide", () => {
+        expect(myFunctions.divide(15, 5)).toBe(3)
+    })
+})
